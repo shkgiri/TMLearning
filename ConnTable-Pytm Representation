@@ -1,2 +1,8 @@
 Problem statement
 There is a challenge to represent system/application which is in Relational 2D data like spreadsheet to a PYTM file. 
+Sol
+1.Python script that take input from excel and build a .py file that can be used by PYTM for threat model. 
+2.Draw in draw.io, automatically export to xml, from Xml to pytm file. 
+
+Understanding
+>>structure of Pytm file
