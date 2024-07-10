@@ -1,1 +1,15 @@
-test
+sudo apt-get update
+git clone https://github.com/izar/pytm
+cd pytm/
+mkdir -p tm
+
+DFD
+
+./tm.py --dfd | dot -Tpng -o tm/dfd.png
+sudo apt-get install plantuml 
+Sequence Diagram
+
+./tm.py --seq > tm/seq2.txt  && plantuml tm/seq2.txt
+
+./tm.py --report docs/basic_template.md | pandoc -f markdown -t html > tm/report.html
+sudo apt-get install pandoc
